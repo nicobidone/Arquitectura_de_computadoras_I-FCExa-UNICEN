@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\nicob\Google Drive\Arquitectura de sistemas I\Vivado\TPE_2017\TPE_2017.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permiso denegado

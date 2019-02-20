@@ -1,0 +1,406 @@
+
+*** Running vivado
+    with args -log processor_tb.vds -m64 -mode batch -messageDb vivado.pb -notrace -source processor_tb.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source processor_tb.tcl -notrace
+Command: synth_design -top processor_tb -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8592 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 272.559 ; gain = 65.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processor_tb' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor_tb.vhd:31]
+INFO: [Synth 8-3491] module 'processor' declared at 'C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor.vhd:5' bound to instance 'UUT' of component 'processor' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor_tb.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'processor' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor.vhd:25]
+INFO: [Synth 8-3491] module 'Registers' declared at 'C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/new/Registers.vhd:35' bound to instance 'ID_Registers' of component 'Registers' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'Registers' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/new/Registers.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Registers' (1#1) [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/new/Registers.vhd:47]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/new/ALU.vhd:38' bound to instance 'EX_ALU' of component 'ALU' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/new/ALU.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (2#1) [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/new/ALU.vhd:46]
+WARNING: [Synth 8-3848] Net WB_Data_wr in module/entity processor does not have driver. [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'processor' (3#1) [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor.vhd:25]
+	Parameter C_ELF_FILENAME bound to: C:/TPEData/Program1 - type: string 
+	Parameter C_MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-3491] module 'memory' declared at 'C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd:15' bound to instance 'Instruction_Mem_inst' of component 'Memory' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor_tb.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'memory' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd:28]
+	Parameter C_ELF_FILENAME bound to: C:/TPEData/Program1 - type: string 
+	Parameter C_MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'memory' (4#1) [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd:28]
+	Parameter C_ELF_FILENAME bound to: C:/TPEData/data - type: string 
+	Parameter C_MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-3491] module 'memory' declared at 'C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd:15' bound to instance 'Data_Mem_inst' of component 'Memory' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor_tb.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'memory__parameterized0' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd:28]
+	Parameter C_ELF_FILENAME bound to: C:/TPEData/data - type: string 
+	Parameter C_MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'memory__parameterized0' (4#1) [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd:28]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor_tb.vhd:137]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor_tb.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'processor_tb' (5#1) [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor_tb.vhd:31]
+WARNING: [Synth 8-3331] design memory__parameterized0 has unconnected port Addr[31]
+WARNING: [Synth 8-3331] design memory has unconnected port Addr[31]
+WARNING: [Synth 8-3331] design Registers has unconnected port wr
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[31]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[30]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[29]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[28]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[27]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[26]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[25]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[24]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[23]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[22]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[21]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[20]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[19]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[18]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[17]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[16]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[15]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[14]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[13]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[12]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[11]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[10]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[9]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[8]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[7]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[6]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[5]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[4]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[3]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[2]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[1]
+WARNING: [Synth 8-3331] design processor has unconnected port D_DataIn[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 703.320 ; gain = 496.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 703.320 ; gain = 496.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-5546] ROM "Regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ID_CtrlEX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ID_CtrlMEM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ID_CtrlWB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "EX_ALUCtrlOut" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "memo_reg[0]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[1]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[2]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[3]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[4]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[5]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[6]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[7]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[8]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[9]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[10]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[11]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[12]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[13]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[14]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[15]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[16]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[17]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[18]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[19]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[20]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[21]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[22]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[23]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[24]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[25]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[26]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[27]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[28]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[29]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[30]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[31]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[32]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[33]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[34]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[35]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[36]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[37]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[38]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[39]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[40]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[41]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[42]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[43]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[44]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[45]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[46]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[47]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[48]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[49]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[50]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[51]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[52]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[53]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[54]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[55]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[56]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[57]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[58]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[59]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[60]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[61]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[62]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[63]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[64]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[65]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[66]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[67]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[68]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[69]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[70]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[71]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[72]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[73]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[74]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[75]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[76]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[77]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[78]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[79]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[80]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[81]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[82]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[83]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[84]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[85]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[86]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[87]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[88]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[89]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[90]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[91]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[92]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[93]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[94]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[95]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[96]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[97]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[98]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memo_reg[99]" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-327] inferring latch for variable 'val_reg' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/new/ALU.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cargar_reg' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'cargar_reg' [C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd:46]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:12 ; elapsed = 00:02:11 . Memory (MB): peak = 814.867 ; gain = 607.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |memory__GB0                 |           1|     23345|
+|2     |memory__GB1                 |           1|     16387|
+|3     |memory__GB2                 |           1|        15|
+|4     |memory__GB3                 |           1|      9924|
+|5     |memory__GB4                 |           1|     13564|
+|6     |memory__GB5                 |           1|     23096|
+|7     |memory__GB6                 |           1|     30260|
+|8     |memory__GB7                 |           1|     41862|
+|9     |memory__GB8                 |           1|     50779|
+|10    |memory__parameterized0__GB0 |           1|     22690|
+|11    |memory__parameterized0__GB1 |           1|     16387|
+|12    |memory__parameterized0__GB2 |           1|     10098|
+|13    |memory__parameterized0__GB3 |           1|     13857|
+|14    |memory__parameterized0__GB4 |           1|     21656|
+|15    |memory__parameterized0__GB5 |           1|     31913|
+|16    |memory__parameterized0__GB6 |           1|     42029|
+|17    |memory__parameterized0__GB7 |           1|     50602|
+|18    |processor                   |           1|      4662|
++------+----------------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 6144  
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2048  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Registers 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 1     
+Module processor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+Module memory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3072  
+	   5 Input      1 Bit        Muxes := 1024  
+Module memory__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3072  
+	   5 Input      1 Bit        Muxes := 1024  
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:39 ; elapsed = 00:02:37 . Memory (MB): peak = 816.395 ; gain = 609.383
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B83388E9C0.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B823525FC0.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B829A6AB20.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B82AA800C0.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B82ABF2F80.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B8277C2500.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B83538DBE0.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B82DACD700.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B82895E040.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B831BDCF20.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B82CEAEDC0.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B82A53E900.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B82B339220.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B842155880.rtd.pb. Please check permission of the directory and existence of the file.
+ERROR: [Common 17-223] Fail to read message file C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B8233F45A0.rtd.pb. Please check permission of the directory and existence of the file.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:03:00 ; elapsed = 00:02:54 . Memory (MB): peak = 816.395 ; gain = 609.383
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:03:00 ; elapsed = 00:02:54 . Memory (MB): peak = 816.395 ; gain = 609.383
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |memory__GB0                 |           1|     23345|
+|2     |memory__GB1                 |           1|     16387|
+|3     |memory__GB2                 |           1|        15|
+|4     |memory__GB3                 |           1|     16788|
+|5     |memory__GB4                 |           1|     13564|
+|6     |memory__GB5                 |           1|     23096|
+|7     |memory__GB6                 |           1|     30260|
+|8     |memory__GB7                 |           1|     41862|
+|9     |memory__GB8                 |           1|     50779|
+|10    |memory__parameterized0__GB0 |           1|     22690|
+|11    |memory__parameterized0__GB1 |           1|     16387|
+|12    |memory__parameterized0__GB2 |           1|     10098|
+|13    |memory__parameterized0__GB3 |           1|     13857|
+|14    |memory__parameterized0__GB4 |           1|     21656|
+|15    |memory__parameterized0__GB5 |           1|     31913|
+|16    |memory__parameterized0__GB6 |           1|     42029|
+|17    |memory__parameterized0__GB7 |           1|     50602|
+|18    |processor                   |           1|      4790|
++------+----------------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-729] Failed to open 'C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/1B83538DBE0.rtd.straps.rtd': Permission denied
+ERROR: [Synth 8-787] cannot access rtd files in 'C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/', this is a FATAL ERROR! Please make sure the directory is readable and writable by the program and do not delete files from this directory while the program is running.
+ERROR: [Synth 8-787] cannot access rtd files in 'C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.runs/synth_1/.Xil/Vivado-10456-VAIO_Nico/realtime/tmp/', this is a FATAL ERROR! Please make sure the directory is readable and writable by the program and do not delete files from this directory while the program is running.
+An unrecoverable error has occurred, synthesis cancelled.
+TclStackFree: incorrect freePtr. Call out of sequence?

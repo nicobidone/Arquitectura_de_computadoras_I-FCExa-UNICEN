@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicob/Google Drive/Arquitectura de sistemas I/Vivado/TPE_2017/TPE_2017.srcs/sources_1/imports/MaterialLab2/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb

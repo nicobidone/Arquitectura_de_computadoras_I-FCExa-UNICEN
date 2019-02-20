@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../TPE_2017.srcs/sources_1/imports/new/Registers.vhd"
+vhdl xil_defaultlib  "../../../TPE_2017.srcs/sources_1/imports/new/ALU.vhd"
+vhdl xil_defaultlib  "../../../TPE_2017.srcs/sources_1/imports/MaterialLab2/processor.vhd"
+vhdl xil_defaultlib  "../../../TPE_2017.srcs/sources_1/imports/MaterialLab2/memory.vhd"
+vhdl xil_defaultlib  "../../../TPE_2017.srcs/sources_1/imports/MaterialLab2/processor_tb.vhd"
+
+# Do not sort compile order
+nosort
